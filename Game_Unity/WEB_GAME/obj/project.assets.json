@@ -6806,11 +6806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
+      "projectUniqueName": "C:\\Users\\matis\\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\\Documentos\\GitHub\\web-game\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
       "projectName": "WEB_GAME",
-      "projectPath": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
+      "projectPath": "C:\\Users\\matis\\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\\Documentos\\GitHub\\web-game\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
       "packagesPath": "C:\\Users\\matis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\obj\\",
+      "outputPath": "C:\\Users\\matis\\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\\Documentos\\GitHub\\web-game\\Game_Unity\\WEB_GAME\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

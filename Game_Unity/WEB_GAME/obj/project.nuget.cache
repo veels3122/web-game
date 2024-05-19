@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kFLVmIJEhce9P7X/0RRPauO1PId4vd4gcoct2n+8jxnfMZqmUZKYHbYo+qwyqM3yTfe52G55hSsn+lUE06cxVw==",
+  "dgSpecHash": "rDQvKUz8lyCWIDqUHIANxoe/q9FvFq9189zDYk9EZc4BaXHI83rb7yLyvohcZGpaWKN7ldij1AIrNPaC7n5vpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
+  "projectFilePath": "C:\\Users\\matis\\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\\Documentos\\GitHub\\web-game\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matis\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\matis\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
