@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\Game_Unity\\Controllers\\WeathercontitionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Game_Unity\\Controllers\\WeathercontitionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\UserWebController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_Cliente\\Controllers\\UserWebController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_Cliente\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\Controllers\\GamesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\Controllers\\GamesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\WEB_GAME.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WEB_GAME\\WEB_GAME.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeathercontitionsController.cs",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\Game_Unity\\Controllers\\WeathercontitionsController.cs",
+              "RelativeDocumentMoniker": "Game_Unity\\Controllers\\WeathercontitionsController.cs",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\Game_Unity\\Controllers\\WeathercontitionsController.cs",
+              "RelativeToolTip": "Game_Unity\\Controllers\\WeathercontitionsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:22:58.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserWebController.cs",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\UserWebController.cs",
+              "RelativeDocumentMoniker": "API_Cliente\\Controllers\\UserWebController.cs",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\UserWebController.cs",
+              "RelativeToolTip": "API_Cliente\\Controllers\\UserWebController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:19:02.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "API_Cliente\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\API_Cliente\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "API_Cliente\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:19:00.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "WEB_GAME\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "WEB_GAME\\Controllers\\GamesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T13:12:50.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WEB_GAME.csproj.nuget.dgspec.json",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json",
+              "RelativeDocumentMoniker": "WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json",
+              "RelativeToolTip": "WEB_GAME\\obj\\WEB_GAME.csproj.nuget.dgspec.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-18T12:45:34.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.json",
+              "RelativeDocumentMoniker": "WEB_GAME\\appsettings.json",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.json",
+              "RelativeToolTip": "WEB_GAME\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-18T12:45:13.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WEB_GAME\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\appsettings.Development.json",
+              "RelativeToolTip": "WEB_GAME\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-18T12:45:11.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WEB_GAME.csproj",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
+              "RelativeDocumentMoniker": "WEB_GAME\\WEB_GAME.csproj",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj",
+              "RelativeToolTip": "WEB_GAME\\WEB_GAME.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-18T12:45:02.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WEB_GAME.csproj.user",
+              "DocumentMoniker": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj.user",
+              "RelativeDocumentMoniker": "WEB_GAME\\WEB_GAME.csproj.user",
+              "ToolTip": "C:\\Users\\matis\\Downloads\\Game_Unity_With_Front_End\\Game_Unity\\WEB_GAME\\WEB_GAME.csproj.user",
+              "RelativeToolTip": "WEB_GAME\\WEB_GAME.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-05-18T12:44:56.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

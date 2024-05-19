@@ -1,0 +1,68 @@
+﻿@model WEB_GAME.Models.UserViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit User</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit User</h1>
+        <form asp-action="Edit" method="post">
+
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label" style="display: none;"></label>
+                <input asp-for="UserId" class="form-control" readonly style="display: none;" />
+                <span asp-validation-for="UserId" class="text-danger" style="display: none;"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NameUser" class="control-label"></label>
+                <input asp-for="NameUser" class="form-control" readonly />
+                <span asp-validation-for="NameUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" style="-webkit-text-security: disc; -moz-text-security: disc; text-security: disc;" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EMail" class="control-label"></label>
+                <input asp-for="EMail" class="form-control" />
+                <span asp-validation-for="EMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Level" class="control-label"></label>
+                <input asp-for="Level" class="form-control" readonly />
+                <span asp-validation-for="Level" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience" class="control-label"></label>
+                <input asp-for="Experience" class="form-control" readonly />
+                <span asp-validation-for="Experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Score" class="control-label"></label>
+                <input asp-for="Score" class="form-control" readonly />
+                <span asp-validation-for="Score" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationDate" class="control-label"></label>
+                <input asp-for="RegistrationDate" class="form-control" readonly />
+                <span asp-validation-for="RegistrationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Departure" class="control-label"></label>
+                <input asp-for="Departure" class="form-control" readonly />
+                <span asp-validation-for="Departure" class="text-danger"></span>
+                <div class="form-group">
+                    <a href="@Url.Action("Index", "User")" class="btn btn-secondary">Back</a>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

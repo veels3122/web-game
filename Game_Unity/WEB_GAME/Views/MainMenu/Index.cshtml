@@ -1,0 +1,61 @@
+﻿@model WEB_GAME.Models.MainMenuViewModel
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Menú Principal</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-group">
+                    @if (Model.IsAdmin)
+                    {
+                        <!-- Opciones para el administrador -->
+                        <li class="list-group-item"><a href="@Url.Action("Index", "AvatarLocations")">AvatarLocations</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Batches")">Batches</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Crop_Pests")">Crop_Pests</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Crops")">Crops</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "CropTreatments")">CropTreatments</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "DetectiveClues")">DetectiveClues</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Detectives")">Detectives</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Fertilizers")">Fertilizers</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Game")">Games</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "MaturationMonitorings")">MaturationMonitorings</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Plagues")">Plagues</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Sceneries")">Sceneries</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Score")">Scores</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "SoilQualitys")">SoilQualitys</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "TimeCollectionTracks")">TimeCollectionTracks</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "User")">Users</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "weatherconditions")">weatherconditions</a></li>
+                    }
+                    else
+                    {
+                        <!-- Opciones para otros usuarios -->
+                        <li class="list-group-item"><a href="@Url.Action("Index", "User")">Modificar User</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Game")">Games</a></li>
+                        <li class="list-group-item"><a href="@Url.Action("Index", "Score")">Scores</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-right">
+                <form asp-action="Logout" asp-controller="Login" method="post">
+                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

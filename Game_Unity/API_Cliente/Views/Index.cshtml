@@ -1,0 +1,99 @@
+﻿@model IEnumerable<API_Cliente.Models.UsersViewMod>
+
+
+<div class="card text-primary">
+    <div class="card-header text-center">
+        <h5>Lista de Users</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a asp-action="Create" class="btn btn-outline-primary btn-sm">Crear Nuevo</a>
+                        <hr />
+                        <h5 class="panel-title">User</h5>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover table-responsive table-striped" id="MyTable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.UserId)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.NameUser)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Password)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.EMail)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Experience)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Score)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.RegistrationDate)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Departure)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Active)
+                                    </th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UserId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NameUser)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Password)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.EMail)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Level)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Experience)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.RegistrationDate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Departure)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Active)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Details" asp-route-id="@item.UserId" class="btn btn-outline-info btn-sm">Ver</a>
+                                            <a asp-action="Edit" asp-route-id="@item.UserId" class="btn btn-outline-warning btn-sm">Editar</a>
+                                            <a asp-action="Delete" asp-route-id="@item.UserId" class="btn btn-outline-danger btn-sm">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+        CRUD User
+    </div>
+</div>

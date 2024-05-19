@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WEB_GAME.Models.UserViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>User List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Users</h1>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <form asp-action="Index" method="get" class="form-inline">
+                    <input type="text" name="searchString" class="form-control mr-2" placeholder="Search users..." />
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <div class="col-md-8 text-right">
+                <a href="@Url.Action("Index", "MainMenu")" class="btn btn-success">Atras</a>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    @if ((bool)ViewBag.ShowUserId)
+                    {
+                        <th>UserId</th>
+                    }
+                    <th>NameUser</th>
+                    <th>Email</th>
+                    <th>Level</th>
+                    <th>Experience</th>
+                    <th>Score</th>
+                    <th>RegistrationDate</th>
+                    <th>Departure</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        @if ((bool)ViewBag.ShowUserId)
+                        {
+                            <td>@user.UserId</td>
+                        }
+                        <td>@user.NameUser</td>
+                        <td>@user.EMail</td>
+                        <td>@user.Level</td>
+                        <td>@user.Experience</td>
+                        <td>@user.Score</td>
+                        <td>@user.RegistrationDate</td>
+                        <td>@user.Departure</td>
+                        <td>@user.Active</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "User", new { id = user.UserId })" class="btn btn-warning btn-sm">Edit</a>
+                            @if (user.Active)
+                            {
+                                <a href="@Url.Action("Deactivate", "User", new { id = user.UserId })" class="btn btn-danger btn-sm">Deactivate</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

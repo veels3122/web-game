@@ -1,0 +1,104 @@
+﻿@model WEB_GAME.Models.RegistroViewModel
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos adicionales para centrar los botones */
+        .button-container {
+            text-align: center;
+        }
+
+            .button-container .btn {
+                margin: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        @* Resumen de validación para mostrar errores generales *@
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <form id="registerForm" asp-action="Register" method="post">
+            @* Campos de formulario *@
+            <!-- UserId -->
+            <input type="hidden" asp-for="UserId" value="0" />
+
+            <!-- NameUser -->
+            <div class="form-group">
+                <label for="NameUser" class="control-label">Nombre de Usuario</label>
+                <input id="NameUser" type="text" class="form-control" asp-for="NameUser" />
+                <span class="text-danger" asp-validation-for="NameUser"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="Password" class="control-label">Contraseña</label>
+                <input id="Password" type="password" class="form-control" asp-for="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" title="Debe contener al menos un número, una letra minúscula, una letra mayúscula y al menos 8 o más caracteres">
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+
+            <!-- ConfirmPassword -->
+            <div class="form-group">
+                <label for="ConfirmPassword" class="control-label">Confirmar Contraseña</label>
+                <input id="ConfirmPassword" type="password" class="form-control" required>
+                <span class="text-danger" id="password-error"></span>
+            </div>
+
+            <!-- EMail -->
+            <div class="form-group">
+                <label for="EMail" class="control-label">Correo Electrónico</label>
+                <input id="EMail" type="email" class="form-control" asp-for="EMail" />
+                <span class="text-danger" asp-validation-for="EMail"></span>
+            </div>
+
+            <!-- Campos ocultos -->
+            <input type="hidden" asp-for="Level" value="0" />
+            <input type="hidden" asp-for="Experience" value="0" />
+            <input type="hidden" asp-for="Score" value="0" />
+            <input type="hidden" asp-for="RegistrationDate" />
+            <input type="hidden" asp-for="Departure" value="0" />
+            <input type="hidden" asp-for="Active" value="True" />
+
+            <!-- Contenedor para los botones -->
+            <div class="button-container">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <a href="@Url.Action("Index", "Login")" class="btn btn-secondary">Atrás</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Validación de contraseña en el cliente
+        $(document).ready(function () {
+            $('#registerForm').submit(function () {
+                var password = $('#Password').val();
+                var confirmPassword = $('#ConfirmPassword').val();
+
+                if (password !== confirmPassword) {
+                    $('#password-error').text('Las contraseñas no coinciden');
+                    return false; // Evita el envío del formulario si las contraseñas no coinciden
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

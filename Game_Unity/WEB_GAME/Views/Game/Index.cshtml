@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WEB_GAME.Models.GameViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Game List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .disabled-link {
+            pointer-events: none; /* Desactiva todos los eventos del ratón */
+            cursor: not-allowed; /* Cambia el cursor a no permitido */
+            opacity: 0.5; /* Hace que el enlace se vea deshabilitado */
+            text-decoration: none; /* Elimina el subrayado para mayor claridad */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Games</h1>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <form asp-action="Index" method="get" class="form-inline">
+                    <input type="text" name="searchString" class="form-control mr-2" placeholder="Search games..." />
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <div class="col-md-8 text-right">
+                <a href="@Url.Action("Index", "MainMenu")" class="btn btn-success">Atras</a>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>GameId</th>
+                    <th>UserName</th>
+                    <th>DateGame</th>
+                    <th>StarDate</th>
+                    <th>EndDate</th>
+                    <th>Duration</th>
+                    <th>Scenario</th>
+                    <th>ID_Score</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var game in Model)
+                {
+                    <tr>
+                        <td>@game.GameId</td>
+                        <td>@game.TransleteNameUser</td>
+                        <td>@game.DateGame</td>
+                        <td>@game.StarDate</td>
+                        <td>@game.EndDate</td>
+                        <td>@game.Duration</td>
+                        <td>@game.TrasleteNameScenarie</td>
+                        <td>@game.Score</td>
+                        <td>@game.Active</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Game", new { id = game.GameId })" class="btn btn-warning btn-sm disabled-link">Edit</a>
+                            @if (game.Active)
+                            {
+                                <a href="@Url.Action("Deactivate", "Game", new { id = game.GameId })" class="btn btn-danger btn-sm">Deactivate</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

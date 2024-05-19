@@ -1,0 +1,77 @@
+﻿@model IEnumerable<WEB_GAME.Models.ScoreViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Score List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .disabled-link {
+            pointer-events: none; /* Desactiva todos los eventos del ratón */
+            cursor: not-allowed; /* Cambia el cursor a no permitido */
+            opacity: 0.5; /* Hace que el enlace se vea deshabilitado */
+            text-decoration: none; /* Elimina el subrayado para mayor claridad */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scores</h1>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <form asp-action="Index" method="get" class="form-inline">
+                    <input type="text" name="searchString" class="form-control mr-2" placeholder="Search scores..." />
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <div class="col-md-8 text-right">
+                <a href="@Url.Action("Index", "MainMenu")" class="btn btn-success">Back</a>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ScoreId</th>
+                    <th>UserId</th>
+                    <th>User Name</th>
+                    <th>Score</th>
+                    <th>DateRegistered</th>
+                    <th>Game</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var score in Model)
+                {
+                    <tr>
+                        <td>@score.ScoreId</td>
+                        <td>@score.UserId</td>
+                        <td>@score.TraslateName</td> <!-- Mostrar el nombre de usuario -->
+                        <td>@score.Score</td>
+                        <td>@score.DateRegistrer</td>
+                        <td>@score.Game</td>
+                        <td>@score.Active</td>
+                        <td>
+                            @if (score.Active)
+                            {
+                                <a href="@Url.Action("Edit", "Score", new { id = score.ScoreId })" class="btn btn-warning btn-sm disabled-link">Edit</a>
+                                <a href="@Url.Action("Deactivate", "Score", new { id = score.ScoreId })" class="btn btn-danger btn-sm">Deactivate</a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("Edit", "Score", new { id = score.ScoreId })" class="btn btn-warning btn-sm">Edit</a>
+                                <!-- Si está desactivado, descomenta la siguiente línea si deseas mostrar el botón de "Activate" -->
+                                <a href="@Url.Action("Deactivate", "Score", new { id = score.ScoreId })" class="btn btn-danger btn-sm">Deactivate</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
