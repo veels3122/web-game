@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEB_GAME")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9d0ba2d90449782e41022f9c159aa649e3e66e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8871280f9e85335a98de335400846393ff302704")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEB_GAME")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEB_GAME")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
