@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Game_Unity",
+    "\\Game_Unity\\API_Cliente",
+    "\\Game_Unity\\API_Cliente\\Models",
+    "\\Game_Unity\\API_Cliente\\Views",
+    "\\Game_Unity\\API_Cliente\\Views\\Home",
+    "\\Game_Unity\\Game_Unity_2"
   ],
+  "SelectedNode": "\\Game_Unity\\Game_Unity_2\\Migrations",
   "PreviewInSolutionExplorer": false
 }
